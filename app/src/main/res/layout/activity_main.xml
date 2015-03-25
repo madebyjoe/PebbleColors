@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/command_holder"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/connect_ip_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP address"/>
+
+    <Button
+        android:id="@+id/connect_ip_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"/>
+
+    <Button
+        android:id="@+id/color_add_rand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Random Command"/>
+
+    <ListView
+        android:id="@+id/color_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/color_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/command_holder"
+        android:background="#AAAAAA">
+
+        <TextView
+            android:id="@+id/current_color_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="R: G: B:"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>
